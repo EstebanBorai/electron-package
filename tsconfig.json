@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "module": "CommonJS",
+    "target": "ES2018",
+    "jsx": "react",
+    "baseUrl": "./src"
+  }
+}

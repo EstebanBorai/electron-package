@@ -1,0 +1,48 @@
+{
+  "name": "electron-package",
+  "version": "0.1.0",
+  "description": "Electron Boilerplate",
+  "main": "src/main.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=DEV concurrently \"npm run start:react\" \"wait-on http://127.0.0.1:8080 && npm run start:electron\"",
+    "start:electron": "electron ./src/main.js",
+    "start:react": "webpack-dev-server --config src/interface/webpack.config.js --mode development --hot",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estebanborai/electron-package.git"
+  },
+  "keywords": [
+    "electron",
+    "boilerplate"
+  ],
+  "author": "Esteban Borai <estebanborai@gmail.com> (github.com/estebanborai)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estebanborai/electron-package/issues"
+  },
+  "homepage": "https://github.com/estebanborai/electron-package#readme",
+  "devDependencies": {
+    "@types/node": "^14.0.11",
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.3",
+    "electron": "^9.0.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^7.0.5",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5",
+    "wait-on": "^5.0.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
