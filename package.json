@@ -28,7 +28,7 @@
   "homepage": "https://github.com/estebanborai/electron-package#readme",
   "devDependencies": {
     "@types/node": "^14.0.11",
-    "concurrently": "^5.2.0",
+    "concurrently": "^6.2.1",
     "cross-env": "^7.0.2",
     "css-loader": "^3.5.3",
     "electron": "^9.4.0",
